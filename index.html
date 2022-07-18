@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+		</script>
+	</head>
+	
+	<body>
+		<div>
+		</div>
+		<main>
+			<div class="topnav" id="myTopnav">
+				<a id="home" href="#home" class="active">Home</a>
+				<a id="dn" href="#DN">Death Note</a>
+				<a id="dbgt" href="#DBGT">Dragon Ball GT</a>
+				<a id="fmab" href="#FMAB">Fullmetal Alchemist Brotherhood</a>
+				<a id="nash" href="#NaSh">Naruto Shippuden</a>
+				<a id="op" href="#OP">One Piece</a>
+				<a id="tg" href="#TG">Tokyo Ghoul</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+				</a>
+			</div>
+			
+			<div class="opcions" style="position: relative; top: -20px;padding-left:16px">
+				<h2>Welcome To PlayMusic Geek</h2>
+				
+				<div class="btns">
+					
+					<button id="btn-dn" class="button">Death Note</button><br>
+					<button id="btn-dbgt" class="button">Dragon Ball GT</button><br>
+					<button id="btn-fmab" class="button">Fullmetal Alchemist Brotherhood</button><br>
+					<button id="btn-nash" class="button">Naruto Shippuden</button><br>
+					<button id="btn-op" class="button">One Piece</button><br>
+					<button id="btn-tg" class="button">Tokyo Ghoul</button>
+					
+				</div>
+			</div>
+			
+			<div class="midia">
+				<div class="video" id="DN">
+					<h2> Death Note<br>The World </h2>
+					
+					<button id="DN_BJ" class="button1">Japonês</button><br>
+					<video id="vdnj" class="videos" poster="poster/DN.jpg" width="98.5%" heigth="auto" controls>
+						<source src="mp4/DN_Jap.mp4" type="video/mp4">
+						<source src="ogg/DN_Jap.ogg" type="video/ogg">
+					</video><br>
+					
+					<button id="DN_BI" class="button1">Inglês</button><br>
+					<video id="vdni" class="videos" poster="poster/DN.jpg" width="98.5%" heigth="auto" controls>
+						<source src="mp4/DN_Ing.mp4" type="video/mp4">
+						<source src="ogg/DN_Ing.ogg" type="video/ogg">
+					</video><br>
+					
+					<button id="DN_BP" class="button1">Português</button><br>
+					<video id="vdnp" class="videos" poster="poster/DN.jpg" width="98.5%" heigth="auto" controls>
+						<source src="mp4/DN_Port.mp4" type="video/mp4">
+						<source src="ogg/DN_Port.ogg" type="video/ogg">
+					</video><br>
+					
+					<button id="DN_BL" class="button1">Live</button><br>
+					<video id="vdnl" class="videos" poster="poster/Live_DN.jpg" width="98.5%" heigth="auto" controls>
+						<source src="mp4/Live_DN.mp4" type="video/mp4">
+						<source src="ogg/Live_DN.ogg" type="video/ogg">
+					</video>
+							
+				</div>
+			    
+			    <div class="video" id="DBGT">
+			    	<h2 style="font-size: 1.8em"> Dragon Ball GT<br>DAN DAN Kokoro Hikareteku </h2>
+			    	
+			    	<button id="DBGT_BJ" class="button1">Japonês</button><br>
+			    	<video id="vdbgtj" class="videos" poster="poster/DBGT.jpg" width="98.5%" heigth="auto" controls>
+			    		<source src="mp4/DBGT_Jap.mp4" type="video/mp4">
+			    		<source src="ogg/DBGT_Jap.ogg" type="video/ogg">
+			    	</video><br>
+			    	
+			    	<button id="DBGT_BI" class="button1">Inglês</button><br>
+			    	<video id="vdbgti" class="videos" poster="poster/DBGT.jpg" width="98.5%" heigth="auto" controls>
+			    		<source src="mp4/DBGT_Ing.mp4" type="video/mp4">
+			    		<source src="ogg/DBGT_Ing.ogg" type="video/ogg">
+			    	</video><br>
+			    	
+			    	<button id="DBGT_BP" class="button1">Português</button><br>
+			    	<video id="vdbgtp" class="videos" poster="poster/DBGT.jpg" width="98.5%" heigth="auto" controls>
+			    		<source src="mp4/DBGT_Port.mp4" type="video/mp4">
+			    		<source src="ogg/DBGT_Port.ogg" type="video/ogg">
+			    	</video><br>
+			    	
+			    	<button id="DBGT_BL" class="button1">Live</button><br>
+			    	<video id="vdbgtl" class="videos" poster="poster/Live_DBGT.jpg" width="98.5%" heigth="auto" controls>
+			    		<source src="mp4/Live_DBGT.mp4" type="video/mp4">
+			    		<source src="ogg/Live_DBGT.ogg" type="video/ogg">
+			    	</video>
+			    </div>
+			    
+			    <div class="video" id="FMAB">
+			    	<h2 style="font-size: 1.8em"> Fullmetal Alchemist Brotherhood<br>Again </h2>
+			    	
+			    	<button id="FMAB_BJ" class="button1">Japonês</button><br>
+			    	<video id="vfmabj" class="videos" poster="poster/FMAB.jpg" width="98.5%" heigth="auto" controls>
+			    		<source src="mp4/FMAB_Jap.mp4" type="video/mp4">
+			    		<source src="ogg/FMAB_Jap.ogg" type="video/ogg">
+			    	</video><br>
+			    	
+			    	<button id="FMAB_BI" class="button1">Inglês</button><br>
+			    	<video id="vfmabi" class="videos" poster="poster/FMAB.jpg" width="98.5%" heigth="auto" controls>
+			    		<source src="mp4/FMAB_Ing.mp4" type="video/mp4">
+			    		<source src="ogg/FMAB_Ing.ogg" type="video/ogg">
+			    	</video><br>
+			    	
+			    	<button id="FMAB_BP" class="button1">Português</button><br>
+			    	<video id="vfmabp" class="videos" poster="poster/FMAB.jpg" width="98.5%" heigth="auto" controls>
+			    		<source src="mp4/FMAB_Port.mp4" type="video/mp4">
+			    		<source src="ogg/FMAB_Port.ogg" type="video/ogg">
+			    	</video><br>
+			    	
+			    	<button id="FMAB_BL" class="button1">Live</button><br>
+			    	<video id="vfmabl" class="videos" poster="poster/Live_FMAB.jpg" width="98.5%" heigth="auto" controls>
+			    		<source src="mp4/Live_FMAB.mp4" type="video/mp4">
+			    		<source src="ogg/Live_FMAB.ogg" type="video/ogg">
+			    	</video>
+			    </div>
+			    
+			    <div class="video" id="NaSh">
+			    	<h2> Naruto Shippuden<br>Blue Bird </h2>
+			    	
+			    	<button id="NaSh_BJ" class="button1">Japonês</button><br>
+			    	<video id="vnashj" class="videos" poster="poster/NaSh.jpg" width="98.5%" heigth="auto" controls>
+			    		<source src="mp4/NaSh_Jap.mp4" type="video/mp4">
+			    		<source src="ogg/NaSh_Jap.ogg" type="video/ogg">
+			    	</video><br>
+			    	
+			    	<button id="NaSh_BI" class="button1">Inglês</button><br>
+			    	<video id="vnashi" class="videos" poster="poster/NaSh.jpg" width="98.5%" heigth="auto" controls>
+			    		<source src="mp4/NaSh_Ing.mp4" type="video/mp4">
+			    		<source src="ogg/NaSh_Ing.ogg" type="video/ogg">
+			    	</video><br>
+			    	
+			    	<button id="NaSh_BP" class="button1">Português</button><br>
+			    	<video id="vnashp" class="videos" poster="poster/NaSh.jpg" width="98.5%" heigth="auto" controls>
+			    		<source src="mp4/NaSh_Port.mp4" type="video/mp4">
+			    		<source src="ogg/NaSh_Port.ogg" type="video/ogg">
+			    	</video><br>
+			    	
+			    	<button id="NaSh_BL" class="button1">Live</button><br>
+			    	<video id="vnashl" class="videos" poster="poster/Live_NaSh.jpg" width="98.5%" heigth="auto" controls>
+			    		<source src="mp4/Live_NaSh.mp4" type="video/mp4">
+			    		<source src="ogg/Live_NaSh.ogg" type="video/ogg">
+			    	</video>
+			    </div>
+			    
+			    <div class="video" id="OP">
+			    	<h2> One Piece<br>Binks' Sake </h2>
+			    	
+			    	<button id="OP_BJ" class="button1">Japonês</button><br>
+			    	<video id="vopj" class="videos" poster="poster/OP.jpg" width="98.5%" heigth="auto" controls>
+			    		<source src="mp4/OP_Jap.mp4" type="video/mp4">
+			    		<source src="ogg/OP_Jap.ogg" type="video/ogg">
+			    	</video><br>
+			    	
+			    	<button id="OP_BI" class="button1">Inglês</button><br>
+			    	<video id="vopi" class="videos" poster="poster/OP.jpg" width="98.5%" heigth="auto" controls>
+			    		<source src="mp4/OP_Ing.mp4" type="video/mp4">
+			    		<source src="ogg/OP_Ing.ogg" type="video/ogg">
+			    	</video><br>
+			    	
+			    	<button id="OP_BP" class="button1">Português</button><br>
+			    	<video id="vopp" class="videos" poster="poster/OP.jpg" width="98.5%" heigth="auto" controls>
+			   		 	<source src="mp4/OP_Port.mp4" type="video/mp4">
+			    		<source src="ogg/OP_Port.ogg" type="video/ogg">
+			    	</video><br>
+			    	
+			    	<button id="OP_BL" class="button1">Live</button><br>
+			    	<video id="vopl" class="videos" poster="poster/Live_OP.jpg" width="98.5%" heigth="auto" controls>
+			    		<source src="mp4/Live_OP.mp4" type="video/mp4">
+			   		 	<source src="ogg/Live_OP.ogg" type="video/ogg">
+			    	</video>
+			    </div>
+			    
+			    <div class="video" id="TG">
+			    	<h2> Tokyo Ghoul<br>Unravel </h2>
+			    	
+			    	<button id="TG_BJ" class="button1">Japonês</button><br>
+			    	<video id="vtgj" class="videos" poster="poster/TG.jpg" width="98.5%" heigth="auto" controls>
+			 		   	<source src="mp4/TG_Jap.mp4" type="video/mp4">
+			 		   	<source src="ogg/TG_Jap.ogg" type="video/ogg">
+			    	</video><br>
+			    	
+			    	<button id="TG_BI" class="button1">Inglês</button><br>
+			    	<video id="vtgi" class="videos" poster="poster/TG.jpg" width="98.5%" heigth="auto" controls>
+			 		   	<source src="mp4/TG_Ing.mp4" type="video/mp4">
+				    	<source src="ogg/TG_Ing.ogg" type="video/ogg">
+			    	</video><br>
+			    	
+			    	<button id="TG_BP" class="button1">Português</button><br>
+			    	<video id="vtgp" class="videos" poster="poster/TG.jpg" width="98.5%" heigth="auto" controls>
+			 		   	<source src="mp4/TG_Port.mp4" type="video/mp4">
+				   	 	<source src="ogg/TG_Port.ogg" type="video/ogg">
+			    	</video><br>
+			    	
+			    	<button id="TG_BL" class="button1">Live</button><br>
+			    	<video id="vtgl" class="videos" poster="poster/Live_TG.jpg" width="98.5%" heigth="auto" controls>
+			  	  	<source src="mp4/Live_TG.mp4" type="video/mp4">
+			    		<source src="ogg/Live_TG.ogg" type="video/ogg">
+			    	</video>
+			    </div>
+			</div>
+		</main>
+		
+		<script linguage="javascript" src="script.js"></script>
+	</body>
+</html>
