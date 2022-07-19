@@ -47,6 +47,7 @@ $(document).ready(function(){
 		$('.midia').show();
 		$('.video').hide();
 		$('#DBGT').show();
+		$('.button1').css("background-color", "hsl(0, 0%, 100%)");
 		$('.icon').click();
 	});
 	
@@ -60,6 +61,7 @@ $(document).ready(function(){
 		$('.midia').show();
 		$('.video').hide();
 		$('#FMAB').show();
+		$('.button1').css("background-color", "hsl(0, 0%, 100%)");
 		$('.icon').click();
 	
 	});
@@ -74,6 +76,7 @@ $(document).ready(function(){
 		$('.midia').show();
 		$('.video').hide();
 		$('#NaSh').show();
+		$('.button1').css("background-color", "hsl(0, 0%, 100%)");
 		$('.icon').click();
 	});
 	
@@ -87,6 +90,7 @@ $(document).ready(function(){
 		$('.midia').show();
 		$('.video').hide();
 		$('#OP').show();
+		$('.button1').css("background-color", "hsl(0, 0%, 100%)");
 		$('.icon').click();
 	});
 	
@@ -101,6 +105,7 @@ $(document).ready(function(){
 		$('.midia').show();
 		$('.video').hide();
 		$('#TG').show();
+		$('.button1').css("background-color", "hsl(0, 0%, 100%)");
 		$('.icon').click();
 	});
 	/** Buttons **/
@@ -126,6 +131,7 @@ $(document).ready(function(){
 		$('.midia').show();
 		$('.video').hide();
 		$('#DBGT').show();
+		$('.button1').css("background-color", "hsl(0, 0%, 100%)");
 	});
 	
 	/**Fullmetal Alchemis Brotherhood**/
@@ -137,6 +143,7 @@ $(document).ready(function(){
 		$('.midia').show();
 		$('.video').hide();
 		$('#FMAB').show();
+		$('.button1').css("background-color", "hsl(0, 0%, 100%)");
 		
 	});
 	
@@ -149,6 +156,7 @@ $(document).ready(function(){
 		$('.midia').show();
 		$('.video').hide();
 		$('#NaSh').show();
+		$('.button1').css("background-color", "hsl(0, 0%, 100%)");
 	});
 	
 	/**One Piece**/
@@ -160,6 +168,7 @@ $(document).ready(function(){
 		$('.midia').show();
 		$('.video').hide();
 		$('#OP').show();
+		$('.button1').css("background-color", "hsl(0, 0%, 100%)");
 	});
 	
 	/**Tokyo Ghoul**/
@@ -172,6 +181,7 @@ $(document).ready(function(){
 		$('.midia').show();
 		$('.video').hide();
 		$('#TG').show();
+		$('.button1').css("background-color", "hsl(0, 0%, 100%)");
 	});
 	
 	/** Reproduction **/
